@@ -1,0 +1,306 @@
+body {
+  background: #524a8f;
+  font-family: var(--base-font-family);
+  width: 100%;
+  height: 100vh;
+}
+
+.text-white {
+  font-size: 100px;
+  line-height: 100px;
+  padding-left: 20px;
+}
+/*---------------------------------------
+     HERO              
+  -----------------------------------------*/
+
+.hero {
+  position: relative;
+  padding: 5em 0;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(87.13deg, #524a90 41%, #ff7468 101.69%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  clip-path: polygon(100% 25%, 0% 100%, 100% 100%);
+  background: #524a90;
+}
+
+.card {
+  position: relative;
+  position: absolute;
+  width: 386px;
+  height: 514px;
+  padding: 0px;
+}
+.ellips {
+  border: 1px solid #cac8da;
+  outline-style: initial;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 100px;
+  margin: 5px;
+}
+
+.ellips h2 {
+  text-align: center;
+  color: wheat;
+}
+
+/*
+-----------------------------
+|   | Services Section
+-----------------------------
+*/
+.content-box{
+  padding: 110px 0;
+}
+.service-item {
+  padding: 20px 0 20px 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.service-item-icon {
+  color: #34c6d3;
+  float: left;
+  margin-right: 25px;
+  width: 70px;
+  height: 75px;
+}
+
+.service-item-image {
+position: relative;
+width: 436px;
+height: 257px;
+background-color: #524a90;
+}
+.service-item-inner {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+   background: #3A3374;
+   border-radius: 4px;
+  bottom: 0;
+  left: 0;
+}
+.inner-content{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  float: right;
+}
+.inner-content-info {
+  float: right;
+    width: 285px;
+    height: 150px;
+ 
+}
+.inner-text {
+    float: left;
+    text-align: center;
+    width: 188px;
+    margin: 0;
+    padding: 30px;
+}
+.inner-text h3 {
+  font-size: 25px;
+}
+.inner-icon{
+  float: left;
+  text-align: center;
+  padding-top: 35px;
+}
+.inner-icon i{
+  color: #ff7468;
+}
+.service-item-title h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.content-title-underline {
+  float: right;
+  width: 40px;
+  height: 2px;
+  background-color: #34c6d3;
+}
+.number {
+  float: left;
+  margin-top: 0px;
+}
+.service-item-des p {
+  margin: 0;
+  padding-left: 85px;
+}
+
+/*---------------------------------------
+     RESPONSIVE STYLES              
+  -----------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+  .about-info h2 {
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .project h2 {
+    max-width: 32%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero {
+    padding-top: 14em;
+  }
+
+  .hero-text {
+    bottom: 2em;
+  }
+
+  .navbar {
+    padding: 1em;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+    padding: 2.5em 0;
+  }
+
+  .nav-link {
+    display: inline-block;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link.contact {
+    margin: 1em 0;
+  }
+
+  .copyright-text,
+  .footer-link,
+  .site-footer .social-icon {
+    margin-top: 3em;
+    padding: 0;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .project-info {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .footer-link,
+  .site-footer .social-icon {
+    margin-top: 1em;
+  }
+
+  .copyright-text {
+    margin: 2.5em 0 1em 0;
+  }
+
+  .footer-link li {
+    margin-left: 0;
+  }
+}
+
+
+
+
+/*
+-----------------------------
+|   | Navigation
+-----------------------------
+*/
+.navbar {
+	padding: 20px 0;
+}
+
+.vesco-top-nav {
+	background-color: transparent;
+	padding: 7px 0;
+}
+
+.navbar-nav > li > a {
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.nav-link {
+	color: #fff !important;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+	background: none !important;
+	color: #34c6d3 !important;
+}
+
+
+
+.navbar-toggler {
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 1px solid #fff;
+	color: #fff;
+	width: 40px;
+	height: 34px;
+	margin-right: 3px;
+	border-radius: 0;
+}
+
+.navbar-toggler .line {
+	width: 100%;
+	float: left;
+	height: 2px;
+	background-color: #fff;
+	margin-bottom: 5px;
+}
+
+.navbar-collapse {
+	max-height: 0 !important;
+	text-align: center;
+	padding-right: 10px;
+}
+
+.nav-item > a.active {
+	color: #34c6d3 !important;
+}
